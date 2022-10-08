@@ -1,0 +1,12 @@
+#name:required:valid {
+    border-color: green;
+}
+#phone:required:valid {
+    border-color: green;
+}
+#email:required:valid {
+    border-color: green;
+}
+#age:required:valid {
+    border-color: green;
+}

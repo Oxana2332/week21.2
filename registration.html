@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация c валидацией через JS</title>
+    <link rel="stylesheet" href="assets/registration.css">
+</head>
+
+<body>
+    <form class="container" name="contact_form" novalidate>
+        <h1 class="container__title">Регистрация</h1>
+        <input type="text" class="container__in" placeholder="имя" id="fname" required>
+        <input type="text" class="container__in" placeholder="фамилия" id="lname" required>
+        <input type="password" class="container__in" placeholder="пароль" minlength="8" id="password" required>
+        <input type="email" class="container__in" placeholder="адрес электронной почты" id="email" required>
+        <input type="tel" class="container__in" placeholder="номер мобильного телефона" id="tel" required>
+        <hr>
+        <div id="errors"></div>
+
+        <button type="button" class="container__button" id="button">Зарегистрироваться</button>
+
+        <p class="container__sing">Нажимая кнопку "Зарегистрироваться":</p>
+        <div class="container__checkbox">
+            <input type="checkbox" id="checkbox" value="check" checked required placeholder="пользовательского соглашения и политики конфиденциальности"/>
+            <div class="container__checkbox_text">
+                Я принимаю условия
+                <a href="" class="container__checkbox_text-link">Пользовательского соглашения</a>
+                и даю своё согласие Яндексу на обработку моей персональной информации на условиях, определенных
+                <a href="" class="container__checkbox_text-link">Политикой конфиденциальности</a>.
+            </div>
+        </div>
+    </form>
+    <script src="script/registration.js"></script>
+</body>
+
+</html>
